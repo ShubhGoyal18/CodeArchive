@@ -15,14 +15,6 @@ int main(){
 	ll count = 0;
 	sort(users.begin(),users.end());
 	sort(apart.begin(),apart.end());
-	// for(auto a:users){
-	// 	cout<<a<<" ";
-	// }
-	// cout<<endl;
-	// for(auto a:apart){
-	// 	cout<<a<<" ";
-	// }
-	// cout<<endl;
 	int apart_index = 0,users_index = 0;
 	while(apart_index < m && users_index < n){
 		if((users[users_index] >= (apart[apart_index] - k)) && (users[users_index] <= (apart[apart_index] + k))){
